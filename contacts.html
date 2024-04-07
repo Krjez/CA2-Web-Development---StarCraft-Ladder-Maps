@@ -1,0 +1,87 @@
+<!-- Jakub Polacek -->
+<!--   D00260171   -->
+<!--   GD1b 2022   -->
+
+<DOCTYPE!html>
+<html lang="UTF-8">
+
+<head>
+  <title>StarCraft II maps - links</title>
+  <!--Link to stylesheet and javascript.
+      I am using the same base styling in all 3 pages for better clarity
+	  few small changes in elements, that aren't necessary to be done in stylesheet are done with inline css next to the tag
+	  Index and content page use the same js, while contacts have their own-->
+  <link rel="stylesheet" type="text/css" href="css/StarCraft II maps.css">
+  <script src="js/ContactsScript.js"></script>
+  <meta charset="UTF-8">
+</head>
+
+
+<body>
+
+  <!-- This navigation bar is same for all 3 pages. Contains links to other pages and official website.-->
+  <nav class="nava">
+    <a href="https://starcraft2.com"> <img class="logo" src="images/sc2logo.png"> </a>
+	
+    <a href="index.html"> &nbsp HOME &nbsp </a>
+	  &nbsp &nbsp
+    <a href="content.html"> &nbsp MAPS &nbsp </a>
+	  &nbsp &nbsp 
+	<a href="contacts.html"> &nbsp CONTACTS &nbsp </a>
+  </nav>
+  
+  
+  <!-- The header serves only as a splitting factor. It doesn't have any function and the website would look the same without it.-->
+  <header>
+    <h1>Contacts</h1>
+  </header>
+
+  <!-- In the main is all the content unique for this page-->
+  <main>
+    <h3>Trouble with the site?</h3>
+	  <p>Please contact our development team here:
+	  <br>Kuba.krtek@email.cz
+	</p>
+
+	
+    <h3>Want to ask about specific strategy?</h3>
+
+    <!--Form is as simple as it can be
+	    validates Discord ID using javascript after every new key press-->
+    <div class="form">
+      <form name="mapQuestion" onsubmit="validCheck()" onkeyup="runCheck()">
+	    <label for="map">Map:</label>
+	    <select id="map" name="Map">
+		  <option value="Cosmic Sapphire LE">Cosmic Sapphire LE</option>
+		  <option value="Data-C LE">Data-C LE</option>
+		  <option value="Inside and Out LE">Inside and Out LE</option>
+		  <option value="Moondance LE">Moondance LE</option>
+		  <option value="Stargazers LE">Stargazers LE</option>
+		  <option value="Tropical Sacrifice LE">Tropical Sacrifice LE</option>
+		  <option value="Waterfall LE">Waterfall LE</option>
+		</select>
+	    <br>
+	    <label for="Discord ID" >Discord ID:</label>
+	    <input type="text" id="Discord ID" name="Discord ID" placeholder="Username#0000">
+		<div class="invalid" id="invalid">invalid!</div>
+		<br>
+	    <label for="question">Write your question here:</label>
+	    <textarea id="question" name="Question"></textarea>
+	    <br>
+	    <input id="submit" type="submit" value="Submit">
+	  </form>
+	</div>
+	
+  
+  </main>
+
+
+  <!-- Footer is for changing the background color and formating the text.-->
+  <footer>
+    <p>Jakub Polacek 2022</p>  
+  </footer>
+
+
+</body>
+
+</html>

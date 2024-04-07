@@ -1,0 +1,222 @@
+/* Jakub Polacek
+     D00260171
+     GD1b 2022   */
+	  
+
+/*All 3 webpages are in the same color scheme for better clarity 
+  the color scheme also fits the golden/space thematic of the the game and of the 3 most recognizable races in the game
+  the color codes were taken from https://htmlcolorcodes.com 
+  source for background is https://i.imgur.com/GCJRhiA.png
+  accessed through https://chrome.google.com/webstore/detail/dark-space/idmnciiknelklflhdlnkokcoihkidkln?hl=en on 24.11.2022
+  font changed for better readability
+  */
+body {
+ background-image: url("space.png");
+ background-attachment: fixed;
+ background-repeat: no-repeat;
+ background-size: 100%;
+ font-family: Arial;
+}
+
+
+
+/*navigation bar is the same for all 3 pages for easy user orientation when going through it
+  it always stays on the top of the page so user can jump to the home page even after scrolling
+  the padding adds a little extra space over and under the text in the navigation bar so it doesn't look so cramped
+  source for logo:  https://www.pngegg.com/en/png-pztfi accessed on 25.11.2022
+*/
+nav {
+ position: sticky;
+ top: 0;
+ padding: 5px;
+ text-align: center;
+}
+
+
+
+/*footer is always in the middle with a different background color to indicate the end of the site
+  it also has a bit of space over itself
+*/
+footer {
+ margin-top: 100px;
+ text-align: center;
+ background-color: #154360;
+}
+
+
+
+/*the basic text is always white and centered to the middle
+  after paragraphs I usually use <br> to give a bit more space between them
+*/
+p {
+ font-size: 24;
+ color: #FDFEFE;
+ text-align: center;
+}
+
+
+
+/*Removes the automatic line under all links and rounds their corners
+*/
+a {
+ text-decoration: none;
+ border-radius: 8px;
+}
+
+
+
+/*Styling for the navigation bar
+  background change is meant for quick orientation on what is link and what isn't
+*/
+.nava > a {
+ font-size: 40;
+ color: #FDFEFE;
+ background-color:#154360;
+}
+
+.nava > a:hover {
+ background-color:black;
+}
+
+/*StarCraft II logo in top left, that leads to official website */
+.logo {
+  position:fixed;
+  width: 17%;
+  left:0;
+  top:0;
+}
+
+
+/*Used for map links on index page
+*/
+.mapa > a {
+ font-size:26;
+ color: #FDFEFE;
+ background-color:#154360;
+}
+
+.mapa > a:hover {
+ background-color: black;
+ color: #F4D03F;
+}
+
+
+
+/*Used for small links*/
+.linksmall > a {
+ font-size:24;
+ color: #FDFEFE;
+ background-color:#154360;
+}
+
+.linksmall > a:hover {
+ background-color:black;
+ color:#F4D03F;
+}
+
+
+
+/*The biggest introduction heading on each page*/
+h1 {
+ text-align: center;
+ font-size: 70;
+ color: #F4D03F;
+}
+
+/*Usual headings for bigger sections and indiviual maps*/
+h2 {
+ text-align: center;
+ font-size: 45;
+ color: #F4D03F;
+}
+
+/*Smaller headlings on 1st and 3rd page*/
+h3 {
+ text-align: center;
+ font-size: 35;
+ color: #F4D03F;
+}
+
+
+
+/*Map icons on content page*/
+.mapicon > img {
+ width: 100px;
+ height: 100px;
+ margin: 0 3.5%;
+ cursor: pointer;
+ outline-offset: 10px;
+}
+
+/*Used for images of the maps
+  the maps are always 500x500 pixels and the text is always on the right from them
+  they have a small (5%) free space to the left, otherwise they would start from the border and be harder to see edges
+*/
+.map > img {
+ width: 500;
+ height: 500;
+ float: left;
+ margin-left: 5%;
+ margin-right: 15px; 
+}
+
+
+
+/*Styles the div for the entire form
+  It is centered, text inside is centered as well and bold
+  Has a slight padding and resize the form to 50% of the page
+*/
+.form {
+  margin: auto;
+  text-align:center;
+  font-size: 20px;
+  font-weight: bold;
+  width: 50%;
+  border-radius: 15px;
+  background-color: #F2F2F2;
+  padding: 20px;
+}
+
+
+/*Styles the select option and Discord ID*/
+input[type=text], select {
+  width: 30%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #CCC;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+/*Styling for the text area in the form*/
+textarea {
+  width: 100%;
+  height: 30%;
+  text-align: left;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 2px solid #CCC;
+  border-radius: 4px;
+  background-color: #F8F8F8;
+  font-size: 16px;
+  resize: none;
+}
+
+/*Base styling for submit button, changed by js*/
+input[type=submit] {
+  width: 30%;
+  background-color: #E74C3C;
+  color: #FDFEFE;
+  font-size: 24px;
+  padding: 14px 20px;
+  margin: 20px 0;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/*Base styling for invalid message, changed later by js*/
+.invalid {
+  color: #E74C3C;
+}

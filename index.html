@@ -1,0 +1,85 @@
+<!-- Jakub Polacek -->
+<!--   D00260171   -->
+<!--   GD1b 2022   -->
+
+<DOCTYPE!html>
+<html lang="UTF-8">
+
+<head>
+  <title>StarCraft II maps - home</title>
+  <!--Link to stylesheet and javascript.
+      I am using the same base styling in all 3 pages for better clarity
+	  few small changes in elements, that aren't necessary to be done in stylesheet are done with inline css next to the tag
+	  Index and content page use the same js, while contacts have their own-->
+  <link rel="stylesheet" type="text/css" href="css/StarCraft II maps.css">
+  <script src="js/ContentScript.js"></script>
+  <meta charset="UTF-8"> 
+</head>
+
+
+<body>
+
+  <!-- This navigation bar is same for all 3 pages. Contains links to other pages and official website.-->
+  <nav class="nava">
+    <a href="https://starcraft2.com"> <img class="logo" src="images/sc2logo.png"> </a>
+	
+    <a href="index.html"> &nbsp HOME &nbsp </a>
+	  &nbsp &nbsp
+    <a href="content.html"> &nbsp MAPS &nbsp </a>
+	  &nbsp &nbsp 
+	<a href="contacts.html"> &nbsp CONTACTS &nbsp </a>
+  </nav>
+  
+  
+  <!-- The header serves only as a splitting factor. It doesn't have any function and the website would look the same without it.-->
+  <header>
+    <h1> StarCraft II ladder maps </h1>
+  </header>
+  
+  
+  <!-- In the main is all the content unique for this page-->
+  <main>
+    <p> Welcome! This website is for StarCraft II players who FINISHED campaign or have a history with RTS genre
+	  <br> and are looking for basic informations, tips and tricks about current 1v1 ladder map pool
+	</p>
+	
+	<!--Links to content page, that calls a function to save the index of map clicked upon, more in js file-->
+	<p class="mapa"> If you feel feel like this fits you, go ahead and take a look at the maps!
+	  <br>
+	  <a onclick="storage(0)" href="content.html"> Cosmic Sapphire LE</a>,&nbsp
+	  <a onclick="storage(1)" href="content.html"> Data-C LE</a>,&nbsp
+	  <a onclick="storage(2)" href="content.html"> Inside and Out LE</a>,&nbsp
+	  <a onclick="storage(3)" href="content.html"> Moondance LE</a>,&nbsp
+	  <a onclick="storage(4)" href="content.html"> Stargazers LE</a>,&nbsp
+	  <a onclick="storage(5)" href="content.html"> Tropical Sacrifice LE</a>,&nbsp
+	  <a onclick="storage(6)" href="content.html"> Waterfall LE</a>
+	</p>
+	  
+    <p class="linksmall">The "LE" after each map name stands for "Ladder Edition"
+	  <br>This means that the map came through 
+	   <a href="https://tl.net/forum/starcraft-2/585619-tlnet-map-contest-16-voting-results-and-winners">TL.net Map Contest</a>
+	   (current map pool came from #16) and was afterwards approved by Blizzard themselves
+	  <br>In few cases, the map was slightly changed by Blizzard before implementation to better fit the competetive level of play
+	</p>
+	
+	<br>
+	
+    <h3> 2v2 and older versions </h3>
+	  <p> Looking for 2v2 map pool or previous StarCraft II map pools?
+      <br> We apologize, but currently we don't have
+	  <br> these map pools on our website implemented yet
+	  <br> HOWEVER, we are working on implementing them in near future<br><br><br>
+	</p>
+
+  </main>
+  
+  
+  <!-- Footer is for changing the background color and formating the text.-->
+  <footer>
+    <p>Jakub Polacek 2022</p>
+  </footer>
+
+
+</body>
+
+</html>
